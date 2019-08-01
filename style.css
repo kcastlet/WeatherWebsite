@@ -1,0 +1,58 @@
+/* .container {width=1024px; margin: 0 auto;} */
+
+.nav-item dropdown
+/* .navbar-brand {
+            font-size: 3em;
+} */
+
+
+
+/* #main-bio {float:left;
+
+}
+
+#figure {
+
+}
+
+#bio-name {
+
+}
+
+#bio-image {float:left;
+
+}
+
+#contact-info {float:left;
+}
+
+body {
+background color = #efeee7
+}
+
+font = "Georgia", Times New Roman, Times, serif;.
+font color = #333333.
+body margins = 0
+padding flush to the top of the page
+
+header
+background-color = #333333.
+h1
+font color = #eee
+font size = 28px
+
+Look at the example on the screen, and eyeball the padding and/or margins and positioning of the text.
+h2
+font size is 24px
+
+Make #main-bio, #contact-info, #bio-image all float: left.
+Make the #bio-image have a width of 200 pixels.
+Be sure to include alt text in all images
+
+#main-bio should have a width of 70%.
+Add margins to the image so there is distance between it and the bio text.
+#content-info should have a width of 30%.
+Adjust the line height so it is 1.5 times the size of the font.
+Make the link color #d21034.
+#figure should be given relative positioning
+#bio-name should use absolute positioning and be placed at the bottom-center of your #bio-imag */
