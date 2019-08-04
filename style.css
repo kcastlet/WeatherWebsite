@@ -1,58 +1,180 @@
-/* .container {width=1024px; margin: 0 auto;} */
+/* CSS for common elements across pages */
 
-.nav-item dropdown
-/* .navbar-brand {
-            font-size: 3em;
-} */
-
-
-
-/* #main-bio {float:left;
-
+.navbar-label{
+    background-color: darkcyan;
+    padding: 1em;
+    font-size: xx-large;
+    color: white;
 }
 
-#figure {
-
+.navbar-link{
+    color:dimgrey;
+    margin-left: 10px;
 }
 
-#bio-name {
-
+body{
+    background-color: lightgray;
 }
 
-#bio-image {float:left;
-
+h1{
+    color:darkcyan;
+    text-align: center;
+    padding: 10px;
+    font-size: xx-large;
 }
 
-#contact-info {float:left;
+h2{
+    color:darkcyan;
+    padding: 15px;
+    font-size: medium;
 }
 
-body {
-background color = #efeee7
+.text{
+    padding: 1em;
+    color:dimgrey;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
-font = "Georgia", Times New Roman, Times, serif;.
-font color = #333333.
-body margins = 0
-padding flush to the top of the page
+.col-sm-2{
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+    box-sizing: border-box;
+}
 
-header
-background-color = #333333.
-h1
-font color = #eee
-font size = 28px
+.container2 {
+    margin: auto;
+    margin-top: 2em;
+    width: 400px;
+    padding: 8px;
+  }
+  
+  .thumbnail {
+    display: inline-block;
+    /*margin-left: 4px; 
+    margin-bottom: 4px;*/ /*<-- these aren't really needed, but look good*/
+    float: right;
+    clear: right;
+  }
 
-Look at the example on the screen, and eyeball the padding and/or margins and positioning of the text.
-h2
-font size is 24px
+/* CSS for large individual text blocks */
 
-Make #main-bio, #contact-info, #bio-image all float: left.
-Make the #bio-image have a width of 200 pixels.
-Be sure to include alt text in all images
+#title{
+    background-color: white;
+    padding: 10px;
+}
 
-#main-bio should have a width of 70%.
-Add margins to the image so there is distance between it and the bio text.
-#content-info should have a width of 30%.
-Adjust the line height so it is 1.5 times the size of the font.
-Make the link color #d21034.
-#figure should be given relative positioning
-#bio-name should use absolute positioning and be placed at the bottom-center of your #bio-imag */
+#comparison{
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.compare-2 {
+    margin-left: 15px;
+}
+
+#data{
+    background-color: white;
+}
+
+/* CSS for visualization section on most pages */
+
+#visualizations{
+    background-color: white;
+    padding: 10px;
+}
+
+#space{
+    padding:10px;
+}
+
+/* CSS for tables */
+
+.table{
+    table-layout: auto;
+    font-size-adjust: inherit;
+}
+
+/* CSS for images */
+
+.img-1 {
+    height: 150px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.img-2 {
+    height: 150px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.img-3 {
+    height: 150px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.img-4 {
+    height: 150px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.img-summary{
+    height: 300px;
+    position: relative;
+}
+
+.img-compare1{
+    height:300px;
+    position: relative;
+}
+
+.img-compare2{
+    height:300px;
+    position: relative;
+}
+
+.img-compare3{
+    height:300px;
+    position: relative;
+    margin-left:15px;
+}
+
+.img-compare4{
+    height:300px;
+    position: relative;
+    margin-left:15px;
+}
+
+/* CSS for smaller screen sizes */
+
+@media (max-width:1000px){
+    .img-1{
+        height: 320px;
+        margin-left: 15px;
+    }
+    .img-2{
+        height: 320px;
+        margin-left: 15px;
+    }
+    .img-3{
+        height: 320px;
+        margin-left: 15px;
+    }
+    .img-4{
+        height: 320px;
+        margin-left: 15px;
+    }
+
+    .img-summary{
+        height:320px;
+        margin-left: 15px;
+
+    }
+}
+

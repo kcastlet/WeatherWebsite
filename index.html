@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Columns Weather Visuals</title>
+  <title>Weather & Latitude</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,35 +13,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <title class="navbar-brand" Latitude></title>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="container-fullwidth">
+            <div class ="row">
+            <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-label" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="navbar-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="MaxTempPage.html">Max Temp vs. Latitude</a>
+              <a class="dropdown-item" href="MaxTemp.html">Max Temp vs. Latitude</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="HumidityPage.html">Humidity vs. Latitude</a>
+              <a class="dropdown-item" href="Humidity.html">Humidity vs. Latitude</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="CloudinessPage.html">Cloudiness vs. Latitude</a>
+              <a class="dropdown-item" href="Cloudiness.html">Cloudiness vs. Latitude</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="WindSpeedPage.html">Wind Speed vs. Latitude</a>
+              <a class="dropdown-item" href="Wind.html">Wind Speed vs. Latitude</a>
             </div>
           </li>
 
-          <li class="nav-item active">
-          <a class="nav-link" href="DataPage.html">Data<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+          <a class="navbar-link" href="Data.html">Data<span class="sr-only">(current)</span></a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="ComparisonPage.html">Comparison</a>
+          <a class="navbar-link" href="Comparison.html">Comparison</a>
         </li>
         
       </ul>
@@ -57,51 +60,68 @@
 <br/>
 
 <div class="container">
-  <h3 class="text-center">Latitude vs. ?</h3>
-  <br/>
-  <br/>
-  <br/>
+    <div class="row">
+    <div class="col-lg-12" id="space"></div>
+    </div>
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5" id="title">
+            <h1>Latitude vs. ?</h1>
+            <hr>
+            <p class="text">The purpose of this project was to analyze how weather
+                changes aw you get clcoser to the equator. To accomplish this
+                analysis, we first pulled data from the OpenWatherMap API
+                to assemble a dataset on over 500 cities.
+                
+                After assembling the dataset, Matplotlib was used to plot various aspects of the
+                data including maximum temperature, humidity, cloudiness, and wind speed. Discover
+                source data and visualizations along with correllation descriptions on this site. 
+            </p>
+            </div>
+    
+    <div class="container2">
     <div class="row">
         <div class="col-sm-2">
           <div class="thumbnail">
-            <p><a href="MaxTempPage.html">
+            <p><a href="MaxTemp.html">
             <img src="Images/Max_Temp_vs_Latitude.png" alt="..." class="img-thumbnail">
           </div>
           <div class="caption">
-              <h3>Maximum Temperature</h3></a></p>
+              <h2>Maximum Temperature</h2></a></p>
          </div>
         </div>
         <div class="col-sm-2">
             <div class="thumbnail">
-                <p><a href="HumidityPage.html">
+                <p><a href="Humidity.html">
               <img src="Images/Humidity_vs_Latitude.png" alt="..." class="img-thumbnail">
             </div>
           <div class="caption">
-              <h3>Humidity</h3></a></p>
+              <h2>Humidity</h2></a></p>
           </div>
         </div>
         <div class="col-sm-2">
             <div class="thumbnail">
-            <p><a href="CloudinessPage.html">
+            <p><a href="Cloudiness.html">
               <img src="Images/Cloudiness_vs_Latitude.png" alt="..." class="img-thumbnail">
             </div>
             <div class="caption">
-                <h3>Cloudiness</h3></a></p>
+                <h2>Cloudiness</h2></a></p>
           </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 last">
             <div class="thumbnail">
-            <p><a href="WindSpeedPage.html">
+            <p><a href="Wind.html">
               <img src="Images/Wind Speed_vs_Latitude.png" alt="..." class="img-thumbnail">
             </div>
             <div class="caption">
-                <h3>Wind Speed</h3></a></p>
+                <h2>Wind Speed</h2></a></p>
           </div>
         </div>
     </div>
 
 
-
+<div class="container3">
     <div class="row">
       <div class="col">
         <h3 class="text-center"></h3>
@@ -109,7 +129,7 @@
             <div class="card-body">
               <h5 class="card-title">Questions</h5>
               <p class="card-text">How do you think latitude affects weather patterns? Can you back it up with data?.</p>
-              <a href="ComparisonPage.html">
+              <a href="Comparison.html">
                 <div class="btn btn-primary">Summary Page</div>
             </div>
           </div>
