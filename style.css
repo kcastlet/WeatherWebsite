@@ -1,7 +1,7 @@
 /* CSS for common elements across pages */
 
 .navbar-label{
-    background-color: darkcyan;
+    background-color: teal;
     padding: 1em;
     font-size: xx-large;
     color: white;
@@ -17,14 +17,14 @@ body{
 }
 
 h1{
-    color:darkcyan;
+    color:teal;
     text-align: center;
     padding: 10px;
     font-size: xx-large;
 }
 
 h2{
-    color:darkcyan;
+    color:teal;
     padding: 15px;
     font-size: medium;
 }
@@ -47,17 +47,22 @@ h2{
 .container2 {
     margin: auto;
     margin-top: 2em;
-    width: 400px;
+    width: 1200px;
     padding: 8px;
   }
   
-  .thumbnail {
+.img-thumbnail {
     display: inline-block;
-    /*margin-left: 4px; 
-    margin-bottom: 4px;*/ /*<-- these aren't really needed, but look good*/
+    margin-left: 4px; 
+    margin-bottom: 4px;
     float: right;
     clear: right;
   }
+
+  #views_slideshow_thumbnailhover_main_field_photo-page_1{
+    float:left;
+    }
+
 
 /* CSS for large individual text blocks */
 
